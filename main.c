@@ -87,6 +87,7 @@ void verify(const char *filename) {
         printf("`%s` Does not have a package declaration!\n", filename);
     }
 
+
     /*
      * TODO this should be given the root_path that bfs was started with,
      * that way we can properly determine the real package path
@@ -96,6 +97,7 @@ void verify(const char *filename) {
         printf("`%s`'s declared package name does not match its file hierarchy!\n");
     }
     */
+    fclose(fp);
 }
 
 // TODO move add to visited here
