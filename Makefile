@@ -18,9 +18,7 @@ endif
 .PHONY: all run clean
 
 all:
-	@echo test
-	$(ls $(BUILD_DIR) | grep java)
-	@echo test2
+	./check_packages .
 	$(CC) $(ARGS) $(BUILD_DIR)/*.java
 
 # java --class-path bin oop.example/Welcome1
