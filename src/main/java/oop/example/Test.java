@@ -1,2 +1,7 @@
-package oop.example;public class Test {
+package oop.example;
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
 }
